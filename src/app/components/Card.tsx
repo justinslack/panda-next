@@ -11,13 +11,13 @@ type CardProps = {
 const cardStyles = css({
 	bg: "white",
 	border: "1px solid #eaeaea",
-	borderRadius: "8px",
-	padding: "20px",
-	maxWidth: "300px",
-	boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+	borderRadius: "8",
+	padding: "4",
+	maxWidth: "72",
+	boxShadow: "md",
 	transition: "box-shadow 0.3s ease",
 	"&:hover": {
-		boxShadow: "0 6px 10px rgba(0, 0, 0, 0.15)",
+		boxShadow: "lg",
 	},
 });
 
@@ -27,12 +27,12 @@ const titleStyles = css({
 });
 
 const paragraphStyles = css({
-	fontSize: "16px",
-	marginBottom: "10px",
+	fontSize: "md",
+	marginBottom: "4",
 });
 
 const linkStyles = css({
-	color: "#0070f3",
+	color: "green.700",
 	textDecoration: "none",
 	"&:hover": {
 		textDecoration: "underline",
