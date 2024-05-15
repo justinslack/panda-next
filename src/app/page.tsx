@@ -2,12 +2,16 @@ import { css } from "../../styled-system/css";
 import { VStack, Flex, Grid } from "../../styled-system/jsx";
 import Button from "./components/Button";
 import Card from "./components/Card";
+import { Typography } from "./components/Typography";
 
 export default function Home() {
 	return (
 		<>
 			<main className={css({ marginBlockStart: "8" })}>
 				<VStack gap={8}>
+					<Typography level="hm" as="h1">
+						This text should have headline1 text style
+					</Typography>
 					<h1 className={css({ fontSize: "2xl", lg: { fontWeight: "bold" } })}>Hello 🐼!</h1>
 					<Flex direction="row" align="center" gap={4}>
 						<Button variant="primary">Primary Button</Button>
