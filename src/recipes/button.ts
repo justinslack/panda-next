@@ -2,27 +2,28 @@ import { cva } from "../../styled-system/css";
 
 export const buttonCva = cva({
 	base: {
-		padding: "8px 16px",
-		fontSize: "16px",
+		paddingInline: "3",
+		paddingBlock: "2",
+		fontSize: "md",
 		border: "none",
-		borderRadius: "5px",
+		borderRadius: "md",
 		cursor: "pointer",
 		transition: "background-color 0.3s ease",
 	},
 	variants: {
 		variant: {
 			primary: {
-				backgroundColor: "#0070f3",
+				backgroundColor: "blue.500",
 				color: "white",
 				"&:hover": {
-					backgroundColor: "#005bb5",
+					backgroundColor: "blue.700",
 				},
 			},
 			secondary: {
-				backgroundColor: "#eaeaea",
-				color: "#333",
+				backgroundColor: "gray.200",
+				color: "gray.900",
 				"&:hover": {
-					backgroundColor: "#cacaca",
+					backgroundColor: "gray.400",
 				},
 			},
 		},
